@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+      <a-scene>
+        <a-assests>
+          <a-asset-item id="pizza" src="thin_crust_pepperoni_pizza/scene.gltf" ></a-asset-item>
+        </a-assests>
+
+      <a-entity>
+          <a-sky color="black"></a-sky>
+          <a-plane position="0 0 -3.5" rotation="-90 0 0" width="4" height="2" color="white"></a-plane>
+          <a-ring color="teal" position="0 0 -3.5" rotation="-90 0 0" width="4" height="2" ></a-ring>
+      </a-entity>
+
+        <a-entity>
+          <a-gltf-model src="#pizza" visible="true" position="0 0 -3.5" rotation="-90 0 0" scale="0.05 0.05 0.05"></a-gltf-model>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
